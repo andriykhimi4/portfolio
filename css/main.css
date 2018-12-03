@@ -118,11 +118,11 @@ table {
     url('../fonts/montserrat_alternates/MontserratAlternates-regular.woff') format('woff'),
     url('../fonts/montserrat_alternates/MontserratAlternates-regular.ttf') format('truetype'),
     url('../fonts/montserrat_alternates/MontserratAlternates-regular.svg#montserrat_alternatesregular') format('svg');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Montserrat Alternates';
   src: url('../fonts/montserrat_alternates/MontserratAlternates-semibold.eot');
   src: url('../fonts/montserrat_alternates/MontserratAlternates-semibold.eot?#iefix') format('embedded-opentype'),
@@ -132,7 +132,7 @@ table {
     url('../fonts/montserrat_alternates/Montserratlternates-semibold.svg#montserrat_alternatessemibold') format('svg');
   font-weight: 600;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: 'Montserrat Alternates';
@@ -142,11 +142,11 @@ table {
     url('../fonts/montserrat_alternates/MontserratAlternates-bold.woff') format('woff'),
     url('../fonts/montserrat_alternates/MontserratAlternates-bold.ttf') format('truetype'),
     url('../fonts/montserrat_alternates/MontserratAlternates-bold.svg#montserrat_alternatesbold') format('svg');
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Montserrat Alternates';
   src: url('../fonts/montserrat_alternates/MontserratAlternates-extrabold.eot');
   src: url('../fonts/montserrat_alternates/Montserratalternates-extrabold.eot?#iefix') format('embedded-opentype'),
@@ -156,8 +156,8 @@ table {
     url('../fonts/montserrat_alternates/MontserratAlternates-extrabold.svg#montserrat_alternatesXBd') format('svg');
   font-weight: 800;
   font-style: normal;
-}
-
+} */
+/* 
 @font-face {
   font-family: 'Montserrat Alternates';
   src: url('../fonts/montserrat_alternates/MontserratAlternates-Black.eot');
@@ -168,7 +168,7 @@ table {
     url('../fonts/montserrat_alternates/MontserratAlternates-Black.svg#montserrat_alternatesblack') format('svg');
   font-weight: 900;
   font-style: normal;
-}
+} */
 
 body {
   font-family: 'Montserrat Alternates', sans-serif;

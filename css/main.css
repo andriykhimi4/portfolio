@@ -112,12 +112,12 @@ table {
 
 @font-face {
   font-family: 'Montserrat Alternates';
-  src: url('../fonts/montserrat_alternates/MontserratAlternates-regular.eot');
-  src: url('../fonts/montserrat_alternates/MontserratAlternates-regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/montserrat_alternates/MontserratAlternates-regular.woff2') format('woff2'),
-    url('../fonts/montserrat_alternates/MontserratAlternates-regular.woff') format('woff'),
-    url('../fonts/montserrat_alternates/MontserratAlternates-regular.ttf') format('truetype'),
-    url('../fonts/montserrat_alternates/MontserratAlternates-regular.svg#montserrat_alternatesregular') format('svg');
+  src: url('../fonts//MontserratAlternates-regular.eot');
+  src: url('../fonts//MontserratAlternates-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts//MontserratAlternates-regular.woff2') format('woff2'),
+    url('../fonts//MontserratAlternates-regular.woff') format('woff'),
+    url('../fonts//MontserratAlternates-regular.ttf') format('truetype'),
+    url('../fonts//MontserratAlternates-regular.svg#montserrat_alternatesregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -136,12 +136,12 @@ table {
 
 @font-face {
   font-family: 'Montserrat Alternates';
-  src: url('../fonts/montserrat_alternates/MontserratAlternates-bold.eot');
-  src: url('../fonts/montserrat_alternates/MontserratAlternates-bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/montserrat_alternates/MontserratAlternates-bold.woff2') format('woff2'),
-    url('../fonts/montserrat_alternates/MontserratAlternates-bold.woff') format('woff'),
-    url('../fonts/montserrat_alternates/MontserratAlternates-bold.ttf') format('truetype'),
-    url('../fonts/montserrat_alternates/MontserratAlternates-bold.svg#montserrat_alternatesbold') format('svg');
+  src: url('../fonts//MontserratAlternates-bold.eot');
+  src: url('../fonts//MontserratAlternates-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts//MontserratAlternates-bold.woff2') format('woff2'),
+    url('../fonts//MontserratAlternates-bold.woff') format('woff'),
+    url('../fonts//MontserratAlternates-bold.ttf') format('truetype'),
+    url('../fonts//MontserratAlternates-bold.svg#montserrat_alternatesbold') format('svg');
   font-weight: bold;
   font-style: normal;
 }

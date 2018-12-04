@@ -1,16 +1,28 @@
 <?php
     error_reporting(0);
-    $from = "Повідомлення із сайту";
+    $from = "Повідомлення-із-сайту";
     $recepient = 'andriykhimi4@gmail.com';
     $sitename = 'khimich';
-  if (isset($_POST['mainForm'])) {    
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $text = $_POST['message'];
+  if (isset($_POST['name'])) {
+    if (!empty($_POST['name'])){
+    $name = strip_tags($_POST['name']);
+    }
+  }
+  if (isset($_POST['message'])) {
+    if (!empty($_POST['message'])){
+    $text = strip_tags($_POST['message']);
+    }
+  }
+  if (isset($_POST['email'])) {
+    if (!empty($_POST['email'])){
+    $email = strip_tags($_POST['email']);
+    }
+  }
     $pagetitle = 'Заявка зворотнього дзвінка ';
     $pagetitle .=  $sitename;
-    $message = '<p><strong>Телефон:</strong> '.$_POST['mainForm'].'</p>';
-    mail($recepient, $pagetitle, $message, "From: $from\nContent-type: text/html; charset=utf-8 \r\n");
-    mail('andriykhimich4@gmail.com', $pagetitle, $message, "From: $from\nContent-type: text/html; charset=utf-8 \r\n");
-  }
+    $message = '<p><strong>Имя:</strong> ' .$name. '</p>
+    <p><strong>Email:</strong> '.$email.'</p>
+    <p><strong>Сообщение:</strong> '.$text.'</p>';
+    
+  mail($recepient, $pagetitle, $message, "From: $from\nContent-type: text/html; charset=utf-8 \r\n"); 
 ?>

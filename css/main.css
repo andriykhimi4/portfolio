@@ -799,22 +799,25 @@ input[type=email] {
   padding: 20px 0;
   background-color: #A9A9A9;
 }
-
+.footer__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 .copyright {
   padding-top: 10px;
   font-size: 12px;
 }
 
-.footer__social {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
 .overlay {
   display: none;
   position: fixed;
@@ -1094,10 +1097,6 @@ input[type=email] {
   .copyright {
     text-align: center;
     padding-bottom: 10px;
-  }
-
-  .footer__social {
-    justify-content: center
   }
 }
 

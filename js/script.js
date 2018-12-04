@@ -48,9 +48,8 @@ $(document).ready(function () {
   });
     
   // form validation
-  $('.overlay').hide();
   $('.btn').click(function(){
-    $('.btn').submit(function(e) {
+    $('.mainForm').submit(function(e) {
       e.preventDefault();
       e.stopImmediatePropagation();
       $.ajax({
@@ -60,7 +59,7 @@ $(document).ready(function () {
         data:  $(this).serialize()
           // Done Functions
         }).done(function(){
-          $('.overlay').css('display','flex').delay(12000);
+          $('.overlay').addClass('overlay-active');
           setTimeout(function() {
             $('.mainForm').trigger("reset");
           }, 1000);

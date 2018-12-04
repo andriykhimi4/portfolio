@@ -46,4 +46,29 @@ $(document).ready(function () {
       'transform': 'translate(0%, ' + scroll / 2.5 + '%'
     });
   });
+    
+  // form validation
+  $('.overlay').hide();
+  $('.btn').click(function(){
+    $('.mainForm').submit(function(e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      $.ajax({
+        type:"POST",
+        url:"form.php",
+        cache: false,
+        data:  $(this).serialize()
+          // Done Functions
+        }).done(function(){
+          $('.overlay').css('display','flex').delay(12000);
+          setTimeout(function() {
+            $('.mainForm').trigger("reset");
+          }, 1000);
+        });
+      return false;
+    });
+  });
+  $('.btn__close').click(function(){
+    $('.overlay').fadeOut(300);
+  });
 });

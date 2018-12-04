@@ -50,7 +50,7 @@ $(document).ready(function () {
   // form validation
   $('.overlay').hide();
   $('.btn').click(function(){
-    $('.mainForm').submit(function(e) {
+    $('.btn').submit(function(e) {
       e.preventDefault();
       e.stopImmediatePropagation();
       $.ajax({

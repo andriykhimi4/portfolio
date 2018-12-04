@@ -48,25 +48,26 @@ $(document).ready(function () {
   });
     
   // form validation
-  $('.btn').click(function(){
-    $('.mainForm').submit(function(e) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-      $.ajax({
-        type:"POST",
-        url:"form.php",
-        cache: false,
-        data:  $(this).serialize()
-          // Done Functions
-        }).done(function(){
-          $('.overlay').addClass('overlay-active');
-          setTimeout(function() {
-            $('.mainForm').trigger("reset");
-          }, 1000);
-        });
-      return false;
-    });
+  // $('.overlay').hide();
+  // $('.btn').click(function(){
+  $('.contact__form').submit(function(e) {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    $.ajax({
+      type:"POST",
+      url:"form.php",
+      cache: false,
+      data:  $(this).serialize()
+        // Done Functions
+      }).done(function(){
+        $('.overlay').addClass('overlay-active');
+        setTimeout(function() {
+          $('.contact__form').trigger("reset");
+        }, 1000);
+      });
+    return false;
   });
+  // });
   $('.btn__close').click(function(){
     $('.overlay').fadeOut(300);
   });

@@ -822,10 +822,6 @@ input[type=email] {
   left: 0;
   bottom: 0;
   right: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -836,6 +832,12 @@ input[type=email] {
   align-items: center;
   background-color: rgba(0, 0, 0, .9);
   z-index: 4;
+}
+.overlay-active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 .success {
   width: 30%;

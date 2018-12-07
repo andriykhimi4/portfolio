@@ -177,6 +177,7 @@ body::-webkit-scrollbar-thumb {
   background-image: url("../img/loader.gif");
   background-repeat: no-repeat;
   background-color: #fff;
+  background-size: cover;
   width: 400px;
   height: 200px;
   margin-top: -100px;
@@ -1147,6 +1148,13 @@ input[type=email] {
 
 /*Medium devices, Tablets*/
 @media only screen and (max-width : 767px) {
+  .loader_inner {
+    width: 200px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -100px;
+    position: absolute;
+  }
   .menu-top-active {
     top: -70%;
   }

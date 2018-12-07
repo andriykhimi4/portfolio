@@ -19,6 +19,11 @@ $(document).ready(function () {
   $('.humburger__logo').click(function () {
     $(this).toggleClass('open');
     $('.menu').toggleClass('menu_active');
+    // $('.menu-line').toggleClass('menu-line-active');
+    setTimeout(function(){
+      $('.menu-top').toggleClass('menu-top-active');
+      $('.menu-bottom').toggleClass('menu-bottom-active');
+    }, 600);
     $('body').toggleClass('body-fixed');
     if ($('.menu__container').is(':visible')) {
       $('.menu__container').fadeOut(600);
@@ -27,10 +32,15 @@ $(document).ready(function () {
     }
   });
   $('.menu__item').click(function () {
-    $('.menu__container').fadeOut(600);
+    $('.menu__container').fadeOut(400);
     $('.humburger__logo').removeClass('open');
+    // $('.menu-line').removeClass('menu-line-active');
     $('.menu').toggleClass('menu_active');
     $('body').toggleClass('body-fixed');
+    setTimeout(function(){
+      $('.menu-top').toggleClass('menu-top-active');
+      $('.menu-bottom').toggleClass('menu-bottom-active');
+    }, 600);
   });
   // sloww scroll
   $('.menu__item a[href^="#"], .footer__item a[href^="#"]').on('click', function () {

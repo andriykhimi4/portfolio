@@ -594,7 +594,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .personal__social {
-  padding-top: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

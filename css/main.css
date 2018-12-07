@@ -1273,7 +1273,7 @@ input[type=email] {
     min-width: 320px;
   }
   .menu-top-active {
-    top: -50%;
+    top: -20%;
   }
   .menu-bottom-active {
     bottom: -10%;

@@ -18,30 +18,30 @@ $(document).ready(function () {
   // humburger menu
   $('.humburger__logo').click(function () {
     $(this).toggleClass('open');
-    $('.menu').toggleClass('menu_active');
-    // $('.menu-line').toggleClass('menu-line-active');
+    // $('.menu').toggleClass('menu_active');
     setTimeout(function(){
       $('.menu-top').toggleClass('menu-top-active');
       $('.menu-bottom').toggleClass('menu-bottom-active');
     }, 600);
     $('body').toggleClass('body-fixed');
     if ($('.menu__container').is(':visible')) {
-      $('.menu__container').fadeOut(600);
+      setTimeout(function(){
+        $('.menu__container').fadeOut(600);
+      }, 1200);
     } else {
       $('.menu__container').fadeIn(600);
     }
+    $('.menu__item a[href^="#"]').on('click', function () {
+      $('.humburger__logo').removeClass('open');
+      $('.menu-top').removeClass('menu-top-active');
+      $('.menu-bottom').removeClass('menu-bottom-active');
+      $('body').removeClass('body-fixed');
+      setTimeout(function(){
+        $('.menu__container').fadeOut(600);
+      }, 1200);
+    });
   });
-  $('.menu__item').click(function () {
-    $('.menu__container').fadeOut(400);
-    $('.humburger__logo').removeClass('open');
-    // $('.menu-line').removeClass('menu-line-active');
-    $('.menu').toggleClass('menu_active');
-    $('body').toggleClass('body-fixed');
-    setTimeout(function(){
-      $('.menu-top').toggleClass('menu-top-active');
-      $('.menu-bottom').toggleClass('menu-bottom-active');
-    }, 600);
-  });
+
   // sloww scroll
   $('.menu__item a[href^="#"], .footer__item a[href^="#"]').on('click', function () {
     $('html, body').animate({

@@ -379,7 +379,8 @@ body::-webkit-scrollbar-thumb {
 } */
 .menu {
   position: relative;
-  top: 100%;
+  top: 50%;
+  opacity: 1;
   left: 50%;
   margin-top: -150px;
   margin-left: -150px;
@@ -389,11 +390,12 @@ body::-webkit-scrollbar-thumb {
   align-self: center;
   width: 300px;
   -webkit-transition: top 0.5s;
-  transition: top 0.5s;
+  transition: top 0.5s, opacity .5s;
 }
 
 .menu_active {
   top: 50%;
+  opacity: 1;
 }
 
 .menu__link {
